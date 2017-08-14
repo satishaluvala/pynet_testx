@@ -40,7 +40,7 @@ def main():
     output = remote_conn.read_very_eager()
     
     output = send_command(remote_conn, 'terminal length 0')
-    output = send_command(remote_conn, 'show version')
+    output = send_command(remote_conn, 'show run')
     print output 
 
    # remote_conn.write("show version" + '\n')
